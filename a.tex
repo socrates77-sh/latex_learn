@@ -1,7 +1,40 @@
-\documentclass{ctexart}
+\documentclass{article}
+
+% 导入需要的宏包
+\usepackage[margin=1in]{geometry} % 设置页面边距
+\usepackage{amsmath} % 提供数学公式支持
+\usepackage{enumitem} % 提供自定义列表支持
+
+% 定义题目和答案的格式
+\newcommand{\question}[1]{\section*{Question #1}}
+\newcommand{\answer}[1]{\subsection*{Answer #1}}
+
+% 设置页眉页脚
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Exam}
+\rhead{Name: \rule{4cm}{0.15mm}}
+\cfoot{\thepage}
+
 \begin{document}
-在\LaTeX{}中排版中文。
-汉字和English单词混排，通常不需要在中英文之间添加额外的空格。
-当然，为了代码的可读性，加上汉字和English 之间的空格也无妨。
-汉字换行时不会引入多余的空格。
+
+% 设置考卷标题
+\title{Sample Exam}
+\date{}
+\maketitle
+
+\question{1} % 第一题
+What is the capital of France? % 题目内容
+
+\answer{1} % 第一题的答案
+The capital of France is Paris. % 答案内容
+
+\question{2} % 第二题
+Solve the equation $2x + 5 = 15$. % 题目内容
+
+\answer{2} % 第二题的答案
+To solve the equation, we subtract 5 from both sides: $2x = 10$. Then, divide both sides by 2 to isolate $x$: $x = 5$. % 答案内容
+
+% 添加更多的题目和答案...
+
 \end{document}
