@@ -1,0 +1,59 @@
+\documentclass{ctexart}
+
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{makeidx}
+\makeindex
+
+
+\begin{document}
+
+\section{Introduction}
+Partl~\cite{germenTeX} has proposed that \ldots
+
+Test index.
+\index{Test@\textsf{""Test}|(textbf}
+\index{Test@\textsf{""Test}!sub@"|sub"||see{Test}}
+\newpage
+Test index.
+\index{Test@\textsf{""Test}|)textbf}
+
+\large\sffamily
+{\color[gray]{0.6}
+60\% 灰色} \\
+{\color[rgb]{0,1,1}
+青色}
+
+\large\sffamily
+{\color{red} 红色} \\
+{\color{blue} 蓝色}
+
+\large\sffamily
+{\color{red!40} 40\% 红色}\\
+{\color{blue}蓝色
+\color{blue!50!black}蓝黑
+\color{black}黑色}\\
+{\color{-red}红色的互补色}
+
+\sffamily
+文字用\textcolor{red}{红色}强调\\
+\colorbox[gray]{0.95}{浅灰色背景} \\
+\fcolorbox{blue}{yellow}{%
+\textcolor{blue}{蓝色边框+文字，%
+黄色背景}
+}
+
+\url{http://wikipedia.org} \\
+\nolinkurl{http://wikipedia.org} \\
+\href{http://wikipedia.org}{Wiki}
+
+\begin{thebibliography}{99}
+    \bibitem{germenTeX} H.~Partl: \emph{German \TeX},
+TUGboat Volume~9, Issue~1 (1988)
+\end{thebibliography}
+
+\printindex
+
+\end{document}
+
+\end{document}

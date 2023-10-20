@@ -1,0 +1,77 @@
+\documentclass{article}
+% \usepackage{ulem}
+% \usepackage[left=1.25in,right=1.25in,top=1in,bottom=1in]{geometry}
+% \usepackage[hmargin=1.25in,vmargin=0.5in]{geometry}
+% \usepackage[margin=1in]{geometry}
+\usepackage[inner=1in,outer=1.25in]{geometry}
+
+
+
+\begin{document}
+
+{\small The small and
+\textbf{bold} Romans ruled}
+{\Large all of great big
+{\itshape Italy}.}
+
+He likes {\LARGE large and
+{\small small} letters}.
+
+An \underline{underlined} text.
+
+% An example of \uline{some
+% long and underlined words.}
+
+Some \emph{emphasized words,
+including \emph{double-emphasized}
+words}, are shown here.
+
+{\linespread{2.0}\selectfont
+The baseline skip is set to be
+twice the normal baseline skip.
+Pay attention to the \verb|\par|
+command at the end. \par}
+In comparison, after the
+curly brace has been closed,
+everything is back to normal.
+
+{\Large Don't read this!
+It is not true.\\
+You can believe me!\par}
+
+{\Large This is not true either.\\
+But remember I am a liar.}\par
+
+This\hspace{1.5cm}is a space
+of 1.5 cm.
+
+x\hspace{\stretch{1}}
+x\hspace{\stretch{3}}
+x\hspace{\fill}x
+
+{\noindent\Large big\hspace{1em}y}\\
+{\Large big\quad y}\\
+nor\hspace{2em}mal\\
+nor\qquad mal\\
+{\tiny tin\hspace{1em}y}\\
+{\tiny tin\quad y}
+
+A paragraph.
+\vspace{2ex}
+
+Another paragraph.
+
+Use command \verb|\vspace{12pt}|
+to add \vspace{12pt} some spaces
+between lines in a paragraph.
+
+Or you can use \verb|\\[12pt]|
+to \\[12pt] add vertical space,
+but it also breaks the line.
+
+\parbox[t]{3em}{TeX\par TeX}
+\parbox[t]{3em}{TeX\par\smallskip TeX}
+\parbox[t]{3em}{TeX\par\medskip TeX}
+\parbox[t]{3em}{TeX\par\bigskip TeX}
+
+\end{document}

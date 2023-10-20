@@ -1,0 +1,359 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\DeclareMathOperator{\argh}{argh}
+\DeclareMathOperator*{\nut}{Nut}
+
+\theoremstyle{definition} \newtheorem{law}{Law}
+\theoremstyle{plain} \newtheorem{jury}[law]{Jury}
+\theoremstyle{remark} \newtheorem*{mar}{Margaret}
+
+\begin{document}
+
+The Pythagorean theorem is
+$a^2 + b^2 = c^2$.
+
+The Pythagorean theorem is:
+\begin{equation}
+a^2 + b^2 = c^2 \label{pythagorean} 
+\end{equation}
+Equation \eqref{pythagorean} is
+called `Gougu theorem' in Chinese.
+
+It's wrong to say
+\begin{equation}
+1 + 1 = 3 \tag{dumb}
+\end{equation}
+or
+\begin{equation}
+1 + 1 = 4 \notag
+\end{equation}
+
+\begin{equation*}
+a^2 + b^2 = c^2
+\end{equation*}
+For short:
+\[ a^2 + b^2 = c^2 \]
+Or if you like the long one:
+\begin{displaymath}
+a^2 + b^2 = c^2
+\end{displaymath}
+
+In text:
+$\lim_{n \to \infty}
+\sum_{k=1}^n \frac{1}{k^2}
+= \frac{\pi^2}{6}$.\\
+In display:
+\[
+\lim_{n \to \infty}
+\sum_{k=1}^n \frac{1}{k^2}
+= \frac{\pi^2}{6}
+\]
+
+$a_1, a_2, \dots, a_n$ \\
+$a_1 + a_2 + \cdots + a_n$ \\
+$a_1 + a_2 + \dots + a_n$
+
+$p^3_{ij} \qquad
+m_\mathrm{Knuth}\qquad
+\sum_{k=1}^3 k $\\[5pt]
+$a^x+y \neq a^{x+y}\qquad
+e^{x^2} \neq {e^x}^2$
+
+$f(x) = x^2 \quad f'(x)
+= 2x \quad f''^{2}(x) = 4$ 
+
+In display style:
+\[
+3/8 \qquad \frac{3}{8}
+\qquad \tfrac{3}{8}
+\]
+In text style:
+$1\frac{1}{2}$~hours \qquad
+$1\dfrac{1}{2}$~hours
+
+$\sqrt{x} \Leftrightarrow x^{1/2}
+\quad \sqrt[3]{2}
+\quad \sqrt{x^{2} + \sqrt{y}}$
+
+Pascal's rule is
+\[
+\binom{n}{k} =\binom{n-1}{k}
++ \binom{n-1}{k-1}
+\]
+
+\[
+f_n(x) \stackrel{*}{\approx} 1
+\]
+
+\[
+\lim_{x \rightarrow 0}
+\frac{\sin x}{x}=1
+\]
+
+$a\bmod b \\
+x\equiv a \pmod{b}$
+
+\[\argh 3 = \nut_{x=1} 4x\]
+
+In text:
+$\sum_{i=1}^n \quad
+\int_0^{\frac{\pi}{2}} \quad
+\oint_0^{\frac{\pi}{2}} \quad
+\prod_\epsilon $ \\
+In display:
+\[\sum_{i=1}^n \quad
+\int_0^{\frac{\pi}{2}} \quad
+\oint_0^{\frac{\pi}{2}} \quad
+\prod_\epsilon \]
+
+In text:
+$\sum\limits_{i=1}^n \quad
+\int\limits_0^{\frac{\pi}{2}} \quad
+\prod\limits_\epsilon $ \\
+In display:
+\[\sum\nolimits_{i=1}^n \quad
+\int\limits_0^{\frac{\pi}{2}} \quad
+\prod\nolimits_\epsilon \]
+
+\[
+\sum_{\substack{0\le i\le n \\
+j\in \mathbb{R}}}
+P(i,j) = Q(n)
+\]
+\[
+\sum_{\begin{subarray}{l}
+0\le i\le n \\
+j\in \mathbb{R}
+\end{subarray}}
+P(i,j) = Q(n)
+\]
+
+$\bar{x_0} \quad \bar{x}_0$\\[5pt]
+$\vec{x_0} \quad \vec{x}_0$\\[5pt]
+$\hat{\mathbf{e}_x} \quad
+\hat{\mathbf{e}}_x$
+
+$0.\overline{3} =
+\underline{\underline{1/3}}$ \\[5pt]
+$\hat{XY} \qquad \widehat{XY}$\\[5pt]
+$\vec{AB} \qquad
+\overrightarrow{AB}$
+
+$\underbrace{\overbrace{(a+b+c)}^6
+\cdot \overbrace{(d+e+f)}^7}
+_\text{meaning of life} = 42$
+
+\[ a\xleftarrow{x+y+z} b \]
+\[ c\xrightarrow[x<y]{a*b*c}d \]
+
+${a,b,c} \neq \{a,b,c\}$
+
+\[1 + \left(\frac{1}{1-x^{2}}
+\right)^3 \qquad
+\left.\frac{\partial f}{\partial t}
+\right|_{t=0}\]
+
+$\Bigl((x+1)(x-1)\Bigr)^{2}$\\
+$\bigl( \Bigl( \biggl( \Biggl( \quad
+\bigr\} \Bigr\} \biggr\} \Biggr\} \quad
+\big\| \Big\| \bigg\| \Bigg\| \quad
+\big\Downarrow \Big\Downarrow
+\bigg\Downarrow \Bigg\Downarrow$
+
+\begin{multline}
+    a + b + c + d + e + f
+    + g + h + i \\
+    = j + k + l + m + n\\
+    = o + p + q + r + s\\
+    = t + u + v + x + z
+\end{multline}
+
+\begin{align}
+    a & = b + c \\
+    & = d + e
+\end{align}
+
+\begin{align}
+    a ={} & b + c \\
+    ={} & d + e + f + g + h + i
+    + j + k + l \notag \\
+    & + m + n + o \\
+    ={} & p + q + r + s
+\end{align}
+
+\begin{align}
+    a &=1 & b &=2 & c &=3 \\
+    d &=-1 & e &=-2 & f &=-5
+\end{align}
+
+\begin{gather}
+    a = b + c \\
+    d = e + f + g \\
+    h + i = j + k \notag \\
+    l + m = n
+\end{gather}
+
+\begin{equation}
+    \begin{aligned}
+    a &= b + c \\
+    d &= e + f + g \\
+    h + i &= j + k \\
+    l + m &= n
+    \end{aligned}
+\end{equation}
+
+\[ \mathbf{X} = \left(
+\begin{array}{cccc}
+x_{11} & x_{12} & \ldots & x_{1n}\\
+x_{21} & x_{22} & \ldots & x_{2n}\\
+\vdots & \vdots & \ddots & \vdots\\
+x_{n1} & x_{n2} & \ldots & x_{nn}\\
+\end{array} \right) \]
+
+\[ |x| = \left\{
+\begin{array}{rl}
+-x & \text{if } x < 0,\\
+0 & \text{if } x = 0,\\
+x & \text{if } x > 0.
+\end{array} \right. \]
+
+\[ |x| =
+\begin{cases}
+-x & \text{if } x < 0,\\
+0 & \text{if } x = 0,\\
+x & \text{if } x > 0.
+\end{cases} \]
+
+\[
+\begin{matrix}
+1 & 2 \\ 3 & 4
+\end{matrix} \qquad
+\begin{bmatrix}
+x_{11} & x_{12} & \ldots & x_{1n}\\
+x_{21} & x_{22} & \ldots & x_{2n}\\
+\vdots & \vdots & \ddots & \vdots\\
+x_{n1} & x_{n2} & \ldots & x_{nn}\\
+\end{bmatrix}
+\]
+
+\[
+\mathbf{H}=
+\begin{bmatrix}
+\dfrac{\partial^2 f}{\partial x^2} &
+\dfrac{\partial^2 f}
+{\partial x \partial y} \\[8pt]
+\dfrac{\partial^2 f}
+{\partial x \partial y} &
+\dfrac{\partial^2 f}{\partial y^2}
+\end{bmatrix}
+\]
+
+\[
+\int_a^b f(x)\mathrm{d}x
+\qquad
+\int_a^b f(x)\,\mathrm{d}x
+\]
+
+\newcommand\diff{\,\mathrm{d}}
+\begin{gather*}
+\int\int f(x)g(y)
+\diff x \diff y \\
+\int\!\!\!\int
+f(x)g(y) \diff x \diff y \\
+\iint f(x)g(y) \diff x \diff y \\
+\iint\quad \iiint\quad \idotsint
+\end{gather*}
+
+$\mathcal{R} \quad \mathfrak{R}
+\quad \mathbb{R}$
+\[\mathcal{L}
+= -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}\]
+$\mathfrak{su}(2)$ and
+$\mathfrak{so}(3)$ Lie algebra
+
+\[
+r = \frac
+{\sum_{i=1}^n (x_i- x)(y_i- y)}
+{\displaystyle \left[
+\sum_{i=1}^n (x_i-x)^2
+\sum_{i=1}^n (y_i-y)^2
+\right]^{1/2} }
+\]
+
+$\mu, M \qquad
+\mathbf{\mu}, \mathbf{M}$
+\qquad {\boldmath$\mu, M$}
+
+$\mu, M \qquad
+\boldsymbol{\mu}, \boldsymbol{M}$
+
+\newtheorem{mythm}{My Theorem}[section]
+\begin{mythm}\label{thm:light}
+The light speed in vacuum
+is $299,792,458\,\mathrm{m/s}$.
+\end{mythm}
+\begin{mythm}[Energy-momentum relation]
+The relationship of energy,
+momentum and mass is
+\[E^2 = m_0^2 c^4 + p^2 c^2\]
+where $c$ is the light speed
+described in theorem \ref{thm:light}.
+\end{mythm}
+
+\begin{law}\label{law:box}
+Don't hide in the witness box.
+\end{law}
+\begin{jury}[The Twelve]
+It could be you! So beware and
+see law~\ref{law:box}.\end{jury}
+\begin{jury}
+You will disregard the last
+statement.\end{jury}
+\begin{mar}No, No, No\end{mar}
+\begin{mar}Denis!\end{mar}
+
+\begin{proof}
+For simplicity, we use
+\[
+E=mc^2
+\]
+That's it.
+\end{proof}
+
+\begin{proof}
+For simplicity, we use
+\[
+E=mc^2 \qedhere
+\]
+\end{proof}
+
+\begin{proof}
+Assuming $\gamma
+= 1/\sqrt{1-v^2/c^2}$, then
+\begin{align*}
+E &= \gamma m_0 c^2 \\
+p &= \gamma m_0v \qedhere
+\end{align*}
+\end{proof}
+
+\begin{proof}
+For simplicity, we use
+\begin{equation}
+E=mc^2.
+\end{equation}
+\end{proof}
+
+\renewcommand{\qedsymbol}%
+{\rule{1ex}{1.5ex}}
+\begin{proof}
+For simplicity, we use
+\[
+E=mc^2 \qedhere
+\]
+\end{proof}
+
+\end{document}

@@ -1,0 +1,289 @@
+\documentclass{ctexart}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{makecell}
+
+\title{Test title}
+\author{ Mary\thanks{E-mail:*****@***.com}
+\and Ted\thanks{Corresponding author}
+\and Louis}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+A reference to this subsection
+\label{sec:this} looks like:
+``see section~\ref{sec:this} on
+page~\pageref{sec:this}.''
+
+\begin{tabular}{l}
+\hline
+“天地玄黄，宇宙洪荒。日月盈昃，辰宿列张。”\footnotemark \\
+\hline
+\end{tabular}
+\footnotetext{表格里的名句出自《千字文》。}
+效果
+
+\marginpar{\footnotesize 边注较窄，不要写过多文字，最好设置较小的字号。}
+
+\begin{enumerate}
+\item An item.
+\begin{enumerate}
+\item A nested item.\label{itref}
+\item[*] A starred item.
+\end{enumerate}
+\item Reference(\ref{itref}).
+\end{enumerate}
+
+\begin{itemize}
+    \item An item.
+    \begin{itemize}
+    \item A nested item.
+    \item[+] A `plus' item.
+    \item Another item.
+    \end{itemize}
+    \item Go back to upper level.
+\end{itemize}
+
+\begin{description}
+    \item[Enumerate] Numbered list.
+    \item[Itemize] Non-numbered list.
+\end{description}
+
+\renewcommand{\labelitemi}{\ddag}
+\renewcommand{\labelitemii}{\dag}
+\begin{itemize}
+\item First item
+\begin{itemize}
+\item Subitem
+\item Subitem
+\end{itemize}
+\item Second item
+\end{itemize}
+
+\renewcommand{\labelenumi}%
+{\Alph{enumi}>}
+\begin{enumerate}
+\item First item
+\item Second item
+\end{enumerate}
+
+\begin{center}
+Centered text using a
+\verb|center| environment.
+\end{center}
+\begin{flushleft}
+Left-aligned text using a
+\verb|flushleft| environment.
+\end{flushleft}
+\begin{flushright}
+Right-aligned text using a
+\verb|flushright| environment.
+\end{flushright}
+
+\centering
+Centered text paragraph.
+\raggedright
+Left-aligned text paragraph.
+\raggedleft
+Right-aligned text paragraph.
+
+Francis Bacon says:
+\begin{quote}
+Knowledge is power.
+\end{quote}
+
+《木兰诗》：
+\begin{quotation}
+万里赴戎机，关山度若飞。
+朔气传金柝，寒光照铁衣。
+将军百战死，壮士十年归。
+归来见天子，天子坐明堂。
+策勋十二转，赏赐百千强。⋯⋯
+\end{quotation}
+
+Rabindranath Tagore's short poem:
+\begin{verse}
+Beauty is truth's smile
+when she beholds her own face in
+a perfect mirror.
+\end{verse}
+
+\begin{verbatim}
+    #include <iostream>
+    int main()
+    {
+    std::cout << "Hello, world!"
+    << std::endl;
+    return 0;
+    }
+\end{verbatim}
+
+\begin{verbatim*}
+    for (int i=0; i<4; ++i)
+    printf("Number %d\n",i);
+\end{verbatim*}
+
+\verb|\LaTeX| \\
+\verb+(a || b)+ \verb*+(a || b)+
+
+\begin{tabular}{|c|}
+center-\\ aligned \\
+\end{tabular},
+\begin{tabular}[t]{|c|}
+top-\\ aligned \\
+\end{tabular},
+\begin{tabular}[b]{|c|}
+bottom-\\ aligned\\
+\end{tabular} tabulars.
+
+\begin{tabular}{lcr|p{6em}}
+\hline
+left & center & right
+& par box with fixed width\\
+L & C & R & P \\
+\hline
+\end{tabular}
+
+\begin{tabular}{@{} r@{:}lr @{}}
+    \hline
+    1 & 1 & one \\
+    11 & 3 & eleven \\
+    \hline
+\end{tabular}
+
+\begin{tabular}{>{\itshape}r<{*}l}
+    \hline
+    italic & normal \\
+    column & column \\
+    \hline
+\end{tabular}
+
+\newcommand\txt
+{a b c d e f g h i}
+\begin{tabular}{cp{2em}m{2em}b{2em}}
+\hline
+pos & \txt & \txt & \txt \\
+\hline
+\end{tabular}
+
+\begin{tabular*}{14em}%
+    {@{\extracolsep{\fill}}|c|c|c|c|}
+    \hline
+    A & B & C & D \\ \hline
+    a & b & c & d \\ \hline
+\end{tabular*}
+
+\begin{tabularx}{14em}%
+    {|*{4}{>{\centering\arraybackslash}X|}}
+    \hline
+    A & B & C & D \\ \hline
+    a & b & c & d \\ \hline
+\end{tabularx}
+
+\begin{tabular}{|c|c|c|}
+    \hline
+    4 & 9 & 2 \\ \cline{2-3}
+    3 & 5 & 7 \\ \cline{1-1}
+    8 & 1 & 6 \\ \hline
+\end{tabular}
+
+\begin{tabular}{cccc}
+    \toprule
+    & \multicolumn{3}{c}{Numbers} \\
+    \cmidrule{2-4}
+    & 1 & 2 & 3 \\
+    \midrule
+    Alphabet & A & B & C \\
+    Roman & I & II& III \\
+    \bottomrule
+\end{tabular}
+
+\begin{tabular}{|c|c|c|}
+    \hline
+    1 & 2 & Center \\ \hline
+    \multicolumn{2}{|c|}{3} &
+    \multicolumn{1}{r|}{Right} \\ \hline
+    4 & \multicolumn{2}{c|}{C} \\ \hline
+\end{tabular}
+
+\begin{tabular}{ccc}
+    \hline
+    \multirow{2}{*}{Item} &
+    \multicolumn{2}{c}{Value} \\
+    \cline{2-3}
+    & First & Second \\ \hline
+    A & 1 & 2 \\ \hline
+\end{tabular}
+
+\begin{tabular}{|c|c|c|}
+    \hline
+    a & b & c \\ \hline
+    a & \multicolumn{1}{@{}c@{}|}
+    {\begin{tabular}{c|c}
+    e & f \\ \hline
+    e & f \\
+    \end{tabular}}
+    & c \\ \hline
+    a & b & c \\ \hline
+\end{tabular}
+
+\begin{tabular}{|c|c|}
+    \hline
+    a & \makecell{d1 \\ d2} \\
+    \hline
+    b & c \\
+    \hline
+\end{tabular}
+
+\renewcommand\arraystretch{1.8}
+\begin{tabular}{|c|}
+\hline
+Really loose \\ \hline
+tabular rows.\\ \hline
+\end{tabular}
+
+\begin{tabular}{c}
+    \hline
+    Head lines \\[6pt]
+    tabular lines \\
+    tabular lines \\ \hline
+\end{tabular}
+
+|\mbox{Test some words.}|\\
+|\makebox[10em]{Test some words.}|\\
+|\makebox[10em][l]{Test some words.}|\\
+|\makebox[10em][r]{Test some words.}|\\
+|\makebox[10em][s]{Test some words.}|
+
+\fbox{Test some words.}\\
+\framebox[10em][r]{Test some words.}
+
+\framebox[10em][r]{Test box}\\[1ex]
+\setlength{\fboxrule}{1.6pt}
+\setlength{\fboxsep}{1em}
+\framebox[10em][r]{Test box}
+
+三字经：\parbox[t]{3em}%
+{人之初性本善性相近习相远}
+\quad
+千字文：
+\begin{minipage}[b][8ex][t]{4em}
+天地玄黄宇宙洪荒
+\end{minipage}
+
+\fbox{\begin{minipage}{15em}%
+    这是一个垂直盒子的测试。
+    \footnote{脚注来自minipage。}
+\end{minipage}}
+
+Black \rule{12pt}{4pt} box.
+Upper \rule[4pt]{6pt}{8pt} and
+lower \rule[-4pt]{6pt}{8pt} box.
+A \rule[-.4pt]{3em}{.4pt} line.
+
+\end{document}
